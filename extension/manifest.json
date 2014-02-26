@@ -1,14 +1,14 @@
 ﻿{
   "manifest_version": 2,
-  "name": "Banned Bluebook",
-  "description": "This extension supplements Yale's official bluebooking app with the functionality to sort courses by rating and by workload.",
+  "name": "UT Course Ratings",
+  "description": "This extension enables ratings for UT MBA courses.",
   "version": "0.1",
-  "permissions": [ "https://ybb.yale.edu/" ],
+  "permissions": [ "http://utmba.edu/" ],
   "permissions": [
     "storage"
    ],
   "content_scripts": [{
-    "matches": ["https://ybb.yale.edu/*"],
+    "matches": ["http://utmba.edu/*"],
     "js": ["jquery.js", "app.js"],
     "run_at": "document_idle",
     "css": ["style.css"]

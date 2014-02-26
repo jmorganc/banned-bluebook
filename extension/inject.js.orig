@@ -159,7 +159,7 @@ var Anti = {
       return cb(course, ratings, context);
     } else {
       $.ajax({
-         url: "http://utmba.edu/courses/" + id,
+         url: "https://ybb.yale.edu/courses/" + id,
          type: "GET",
          beforeSend: function(xhr){
            xhr.setRequestHeader('Accept', 'application/json, text/javascript, */*; q=0.01');

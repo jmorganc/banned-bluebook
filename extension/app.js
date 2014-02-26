@@ -1,5 +1,5 @@
 
-fileGetContents('inject.js', function(js) { var script   = document.createElement("script");
+fileGetContents('inject.js', function(js) { var script = document.createElement("script");
   script.type  = "text/javascript";
   script.text  = js;
   document.body.appendChild(script);
